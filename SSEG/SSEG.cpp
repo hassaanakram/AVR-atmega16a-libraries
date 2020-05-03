@@ -12,9 +12,9 @@ SSEG::SSEG(reg8 *p, reg8 *d)
 	*(port) = 0x00;
 }
 /*Methods*/
-void SSEG::writeData(const char& data)
+void SSEG::writeData(const char& digit)
 {
-	*(port) = data;
+	*(port) = digitVals[digit];
 	
 	return;
 }
